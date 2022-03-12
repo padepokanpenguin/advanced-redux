@@ -12,7 +12,7 @@ const Cart = (props) => {
       <ul>
         {cartItems.map(item =>
         <CartItem
-          item={{ id: item.id, title: item.name, quantity: item.quantity, total: item.totalPrice, price: item.price }}
+          key={Math.random()} item={{ id: item.id, title: item.name, quantity: item.quantity, total: item.totalPrice, price: item.price }}
         />
           )
         }
